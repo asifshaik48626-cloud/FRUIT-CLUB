@@ -44,7 +44,7 @@ export default function App() {
   const [cashbookDate, setCashbookDate] = useState(new Date().toISOString().split('T')[0]);
 
   // Auth States
-  const [mockEmailInput, setMockEmailInput] = useState('owner@freshlogistics.com');
+  const [mockEmailInput, setMockEmailInput] = useState('owner@bussinessclub.com');
   const [showMockLoginModal, setShowMockLoginModal] = useState(false);
   const [showCustomMockInput, setShowCustomMockInput] = useState(false);
   const [loginError, setLoginError] = useState('');
@@ -130,7 +130,7 @@ export default function App() {
         // Bootstrap new organization
         const orgsSnapshot = await getDocs(collection(db, 'organizations'));
         const count = orgsSnapshot.size;
-        const orgName = count === 0 ? 'Ghouse fruits' : `${name}'s fruits`;
+        const orgName = count === 0 ? 'BUSSINESS CLUB' : `${name}'s fruits`;
 
         const orgDocRef = doc(collection(db, 'organizations'));
         const orgId = orgDocRef.id;
@@ -1509,7 +1509,7 @@ export default function App() {
   const sendWhatsAppReminder = (cust) => {
     const cleanedPhone = cust.phone.replace(/[^0-9]/g, '');
     const phoneWithCountry = cleanedPhone.startsWith('91') ? cleanedPhone : `91${cleanedPhone}`;
-    const message = `Dear ${cust.name}, this is a credit due reminder from Ghouse fruits. Your current outstanding balance is Rs. ${parseFloat(cust.balance_due).toFixed(2)}. Please arrange for a timely clearance. Thank you!`;
+    const message = `Dear ${cust.name}, this is a credit due reminder from BUSSINESS CLUB. Your current outstanding balance is Rs. ${parseFloat(cust.balance_due).toFixed(2)}. Please arrange for a timely clearance. Thank you!`;
     const waUrl = `https://wa.me/${phoneWithCountry}?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank');
   };
@@ -1538,7 +1538,7 @@ export default function App() {
               <div className="w-16 h-16 bg-[#1E4D2B]/10 text-[#1E4D2B] rounded-2xl flex items-center justify-center shadow-md mb-4 border border-[#1E4D2B]/10">
                 <span className="material-symbols-outlined text-[38px] text-[#1E4D2B]" style={{ fontVariationSettings: "'FILL' 1" }}>forest</span>
               </div>
-              <h2 className="text-3xl font-black text-slate-800 tracking-tight text-center">Ghouse fruits</h2>
+              <h2 className="text-3xl font-black text-slate-800 tracking-tight text-center">BUSSINESS CLUB</h2>
               <p className="text-[10px] text-primary font-bold mt-1 uppercase tracking-widest">Wholesale Portal Dues Log</p>
             </div>
 
@@ -1670,7 +1670,7 @@ export default function App() {
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWxercrfxVuI93f7q-Yke9f_9Qg3dxqCLavMz-WOVBW_3dpvdKwiDCQXXHGYBzGUqxFJ1xd4XUnQT-kSjmNIvKKqViEFNxAUEV5ZI0rqdW2SU0ALk6JaV1Dv2drBNb95lreIk8X-8ONOaP6w3ZHozjrBgKTVZIKVhlxyZ5zJcelwTOGrctC4bRgeIsFtpUkaMu5dRkzmsld_3N1W8b6xJtzG8rcvBeBAyb9pJ_EljgGJzHpCDY8iOo2-tVxdlMrTiee_AHxIupMgiW" 
                   />
                 </div>
-                <h1 className="text-headline-md font-headline-md font-bold text-primary">{user?.organization_name || 'Ghouse fruits'}</h1>
+                <h1 className="text-headline-md font-headline-md font-bold text-primary">{user?.organization_name || 'BUSSINESS CLUB'}</h1>
               </div>
 
               {/* Desktop Nav cluster */}
@@ -3005,7 +3005,7 @@ export default function App() {
 
           {/* Footer - Hidden in Print */}
           <footer className="no-print bg-surface border-t border-outline-variant py-4 text-center text-[10px] font-bold text-outline uppercase tracking-wider shrink-0">
-            {t('businessName')} © 2026 - Ghouse fruits Platform v2.4.0
+            {t('businessName')} © 2026 - BUSSINESS CLUB Platform v2.4.0
           </footer>
 
           {/* ======================================================== */}
@@ -3014,7 +3014,7 @@ export default function App() {
           {activeTab === 'reports' && reportResult && (
             <div className="hidden print:block w-full text-left p-6 print-area font-sans">
               <h2 className="text-2xl font-bold text-slate-800 uppercase tracking-tight">{t('businessName')} REPORT</h2>
-              <p className="text-xs text-slate-500 mt-1 font-semibold">Platform: Ghouse fruits v2.4.0 | Date: {new Date().toLocaleString()}</p>
+              <p className="text-xs text-slate-500 mt-1 font-semibold">Platform: BUSSINESS CLUB v2.4.0 | Date: {new Date().toLocaleString()}</p>
               <p className="text-xs text-slate-500">Report bounds: {reportType.toUpperCase()} ({reportStartDate} to {reportEndDate})</p>
               
               <div className="mt-6 border-b-2 border-slate-800 pb-3">
@@ -3474,7 +3474,7 @@ export default function App() {
                     <div id="invoice-bill-view" className="p-6 border border-outline-variant rounded-xl bg-white space-y-6 text-sm">
                       <div className="flex justify-between items-start">
                         <div>
-                          <h2 className="text-xl font-extrabold text-primary leading-none">Ghouse fruits</h2>
+                          <h2 className="text-xl font-extrabold text-primary leading-none">BUSSINESS CLUB</h2>
                           <p className="text-[10px] text-outline font-bold mt-1 uppercase">Wholesale Fruits Trading Agency</p>
                           <p className="text-[9px] text-outline font-medium">Gate No. 2, Wholesale Produce Market</p>
                         </div>
@@ -3601,25 +3601,25 @@ export default function App() {
                     <div className="grid grid-cols-2 gap-2">
                       <button 
                         type="button"
-                        onClick={() => setMockEmailInput('owner@freshlogistics.com')}
+                        onClick={() => setMockEmailInput('owner@bussinessclub.com')}
                         className={`py-2 px-3 rounded-lg text-xs font-bold border transition-all ${
-                          mockEmailInput === 'owner@freshlogistics.com' 
+                          mockEmailInput === 'owner@bussinessclub.com' 
                             ? 'bg-primary text-on-primary border-transparent' 
                             : 'bg-surface hover:bg-slate-100 border-outline-variant text-slate-700'
                         }`}
                       >
-                        owner@freshlogistics.com
+                        owner@bussinessclub.com
                       </button>
                       <button 
                         type="button"
-                        onClick={() => setMockEmailInput('staff@freshlogistics.com')}
+                        onClick={() => setMockEmailInput('staff@bussinessclub.com')}
                         className={`py-2 px-3 rounded-lg text-xs font-bold border transition-all ${
-                          mockEmailInput === 'staff@freshlogistics.com' 
+                          mockEmailInput === 'staff@bussinessclub.com' 
                             ? 'bg-primary text-on-primary border-transparent' 
                             : 'bg-surface hover:bg-slate-100 border-outline-variant text-slate-700'
                         }`}
                       >
-                        staff@freshlogistics.com
+                        staff@bussinessclub.com
                       </button>
                     </div>
                   </div>

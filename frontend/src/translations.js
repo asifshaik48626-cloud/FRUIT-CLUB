@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     // Navigation
-    appName: "Ghouse fruits",
+    appName: "BUSSINESS CLUB",
     dashboard: "Dashboard",
     salesEntry: "Sales Entry",
     customers: "Customers",
@@ -80,7 +80,7 @@ export const translations = {
     printInvoice: "Print Invoice",
     remove: "Remove",
     invoiceDetails: "Invoice Details",
-    businessName: "GHOUSE FRUITS WHOLESALE AGENCY",
+    businessName: "BUSSINESS CLUB WHOLESALE AGENCY",
     businessAddr: "Gate No. 2, Wholesale Fruit Market",
     operator: "Operator",
     thankYou: "Thank you for your business!",
@@ -145,7 +145,7 @@ export const translations = {
   },
   te: {
     // Navigation
-    appName: "ఘౌస్ ఫ్రూట్స్",
+    appName: "బిజినెస్ క్లబ్",
     dashboard: "డ్యాష్‌బోర్డ్",
     salesEntry: "అమ్మకాల నమోదు",
     customers: "ఖాతాదారులు",
@@ -224,7 +224,7 @@ export const translations = {
     printInvoice: "బిల్లు ప్రింట్ చేయి",
     remove: "తొలగించు",
     invoiceDetails: "ఇన్వాయిస్ వివరాలు",
-    businessName: "ఘౌస్ ఫ్రూట్స్ హోల్‌సేల్ ఏజెన్సీ",
+    businessName: "బిజినెస్ క్లబ్ హోల్‌సేల్ ఏజెన్సీ",
     businessAddr: "గేట్ నెం. 2, హోల్‌సేల్ పండ్ల మార్కెట్",
     operator: "ఆపరేటర్",
     thankYou: "మళ్ళీ సందర్శించండి!",
